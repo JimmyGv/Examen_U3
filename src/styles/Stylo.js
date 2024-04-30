@@ -1,82 +1,99 @@
-import {StyleSheet} from 'react'
+import React from 'react'
+import { StyleSheet } from 'react-native'
 
 const Stylo = StyleSheet.create({
-    map: {
-        ...StyleSheet.absoluteFillObject,
-      },
     container: {
       flex: 1,
+      //justifyContent: "center",
+      marginHorizontal: 10,
+      //marginTop: 50,
+      //alignItems: "center",
+      //padding: 60
+    },
+    container2: {
+      flex: 1,
       justifyContent: "center",
-      alignItems: "center",
+      marginHorizontal: 10,
+      marginTop: 50,
+      //alignItems: "center",
+      padding: 60
     },
-    buttonsHome: {
-        marginTop: 20,
-        backgroundColor: 'blue',
-        padding: 10,
-        borderRadius: 5,
-        alignItems: 'center',
-        width: "100%",
+    map: {
+      ...StyleSheet.absoluteFillObject,
     },
-    formContainer: {
-        width: "100%",
-        marginBottom: 20,
-    },
-    input: {
-        width: "100%",
-        padding: 10,
-        marginBottom: 10,
-        borderWidth: 1,
-        borderColor: "gray",
-        borderRadius: 5,
-    },
-      taskContainer: {
-        marginBottom: 10,
-        borderWidth: 1,
-        borderColor: "lightgray",
-        borderRadius: 5,
-        padding: 10,
-    },
-    taskText: {
-        fontSize: 16,
-    },
-    buttonContainer: {
-        flexDirection: "row",
-        justifyContent: "space-between",
-    },
-    //Camera 
-    camera: {
-        flex: 1,
-        justifyContent: "flex-end",
-        alignItems: "center",
-    },
-    buttonCamera: {
-        backgroundColor: "#fff",
-        borderRadius: 5,
+    button: {
+        backgroundColor: '#0000FF', // Ajusta este color al del botón en la imagen
         padding: 15,
-        paddingHorizontal: 20,
-        alignSelf: "center",
+        borderRadius: 5,
+        width: '80%',
+        alignItems: 'center',
+        marginBottom: 20,
+        top:30,
+        marginTop: 20,
         margin: 20,
-    },
-    text: {
-        fontSize: 18,
-        color: "#000",
-    },
-    //Communications
-    smsContainer: {
-        marginBottom: 20,
-    },
-    emailContainer: {
-        marginBottom: 20,
-    },
-    callContainer: {
-        marginBottom: 20,
-    },
+      },
     input: {
         marginBottom: 10,
         padding: 10,
         backgroundColor: "#fff",
         borderRadius: 5,
-    },
+      },
+      entrada: {
+        height: 40,
+        marginVertical: 12,
+        borderWidth: 1,
+        padding: 10,
+        width: 200, 
+      },
+      botonAgregar: {
+        backgroundColor: '#3361FF', 
+        padding: 10,
+        alignItems: 'center',
+        marginBottom: 20,
+      },
+      botonGuardar: {
+        backgroundColor: '#FFC107', 
+        padding: 10,
+        alignItems: 'center',
+        marginBottom: 20,
+      },
+      botonEditar: {
+        backgroundColor: '#2196F3',
+        padding: 8,
+        paddingHorizontal: 20,
+      },
+      botonBorrar: {
+        backgroundColor: '#f44336', 
+        padding: 8,
+        paddingHorizontal: 20,
+      },
+      textoBoton: {
+        color: 'white',
+        fontWeight: 'bold',
+      },
+      itemAlumno: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginVertical: 8,
+      },
+      camera: {
+        flex: 1,
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+      },
+      buttonContainer: {
+        flexDirection: 'column',
+        justifyContent: 'center',
+        marginBottom: 20,
+        paddingHorizontal: 20,
+      },
+      text: {
+        fontSize: 18,
+        color: '#000',
+      },
   });
+  
 
 export default Stylo
+

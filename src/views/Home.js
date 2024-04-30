@@ -1,10 +1,9 @@
 import React from 'react'
 import { View, Text, Button } from "react-native";
 import Stylo from '../styles/Stylo';
-
 const Home = ({ navigation }) => {
     return (
-      <View style={Stylo.container}>
+      <View style={Stylo.container2}>
         <Text>Home Screen</Text>
         <Button style={Stylo.button} title="Camera" onPress={() => navigation.navigate("Camera")} />
         <Button style={Stylo.button} title="View Communications" onPress={() => navigation.navigate("Communications")}/>
